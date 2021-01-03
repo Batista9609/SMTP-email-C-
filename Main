@@ -44,10 +44,10 @@ namespace EmailSending
                 client.Timeout = 200000;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("odysseys0996@gmail.com", "Batista300996");
+                client.Credentials = new NetworkCredential("Email", "Clave");
                 MailMessage msg = new MailMessage();
                 msg.To.Add(textBox1.Text);
-                msg.From = new MailAddress("odysseys0996@gmail.com");
+                msg.From = new MailAddress("Email");
                 msg.Subject = textBox3.Text;
                 msg.Body = textBox2.Text;
                 Attachment data = new Attachment(textBox4.Text);
